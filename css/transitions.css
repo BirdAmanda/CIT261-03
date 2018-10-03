@@ -1,0 +1,24 @@
+#class_name {
+    position:relative;
+    height:280 px;
+    width:450px;
+    margin:0 auto;
+    
+    
+}
+
+#class_name img{
+    position:absolute;
+    left: 0;
+    -webkit-transition:opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transiton: opacity 1s ease-in-out;
+    
+    
+}
+
+#class_name img.top:hover{
+    opacity:0;
+
+}

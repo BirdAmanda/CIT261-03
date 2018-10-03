@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Can I Sleep In?</title>
+<script> 
+function canISleep(){
+	//Grab computer date and store in now so I can use .operator options like getMonth()
+	var now = new Date();
+	//Set month to the number of the month we are in
+    var month = now.getMonth();
+	//var month = 11;
+    var dayOfMonth = now.getDate();
+	//var dayOfMonth = 25;
+    var dayOfWeek = now.getDay();
+	//var dayOfWeek = 0;
+	//Set variable message to use below.
+	var message;
+	
+    //alert('Month is ' + month);
+	//alert('Day is ' + dayOfMonth);
+	//alert('DayofWeek is ' + dayOfWeek);
+    if (month==0 && dayOfMonth == 1) {
+	message = 'Sleep In.';
+	}
+    else if (month==6 && dayOfMonth == 4){
+        message = 'Sleep In.';
+    }
+	else if (month==11 && dayOfMonth == 25){
+        message = 'Sleep In.';
+	}
+	else if (dayOfWeek==6 || dayOfWeek==0){
+        message = 'Sleep In.';
+	}
+	else {
+       message = 'Get Up!';
+	}
+document.getElementById('outputDiv').innerHTML = message;
+
+}
+</script>
+</head>
+<body>
+<button type="button" onclick="canISleep()">Can I sleep In?</button>
+<div id="outputDiv"></div>
+</body>
+</html>

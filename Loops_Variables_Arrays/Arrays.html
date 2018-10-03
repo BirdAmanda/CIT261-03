@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Array Program</title>
+<script type="text/javascript">
+//Clear Values
+function addEnds(list) {
+var first = list[0];
+var end = list[list.length-1];
+	if(typeof list[0] == "number"){
+	var EndValue = first + end;
+	}
+	else{
+	var EndValue = first + " " +end;
+	}
+return EndValue  
+}
+
+function getMiddle(list) {
+var total = list.length;
+	if(total % 2 == 0){
+	var r_middle = parseInt(total/2);  //Gives +1
+	var l_middle = r_middle - 1;
+		if(typeof list[l_middle] == "number"){
+		var value = parseFloat((list[l_middle] + list[r_middle])/2);
+		}
+		else{
+		var value = list[l_middle] + " " + list[r_middle];
+		}
+	}
+	else{
+	var middle = parseInt(total/2);
+	var value = list[middle];
+	}
+return value;
+}
+
+function testFunctions(){
+//var puppys = ["Chewy", "Poofy", "Fluffy", "Chunky", "Hairy", "Silly"]; //Even Array
+var puppys = ["Chewy", "Poofy", "Fluffy", "Chunky", "Hairy"]; //Odd Array
+//var numbers = [10,20,30,40,50,60]; //Even Array Numbers
+//var numbers = [10,20,30,40,50,60,70]; //Odd Array Numbers
+var end = addEnds(puppys);
+var mid = getMiddle(puppys);
+var test = "The Added Arrays is : "+end + "<br><br>The Middle is " + mid;
+document.getElementById('outputDiv').innerHTML = test;	  
+}
+
+</script>
+</head>
+<body>
+<h1>Array Program</h1>
+<button type="button" onclick="testFunctions()">Test</button>
+<br><br>
+<div id='outputDiv'></div>
+
+</body>
+</html>

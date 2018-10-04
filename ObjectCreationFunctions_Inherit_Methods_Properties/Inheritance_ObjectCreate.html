@@ -1,18 +1,26 @@
-var o = {
-  a: 2,
-  m: function() {
-    return this.a + 1;
-  }
-};
-
-console.log(o.m()); // 3
-// When calling o.m in this case, 'this' refers to o
-
-var p = Object.create(o);
-// p is an object that inherits from o
-
-p.a = 4; // creates a property 'a' on p
-console.log(p.m()); // 5
-// when p.m is called, 'this' refers to p.
-// So when p inherits the function m of o, 
-// 'this.a' means p.a, the property 'a' of p
+<script> 
+    // creating a function which will be the 
+    // prototype for the object to be created later 
+    function vegetables() { 
+        this.name = 'vegi 1'; 
+        this.season = 'fall'; 
+    } 
+  
+// creating a function to whose object  
+// will inherit properties from the    
+// prototype using object.create() method 
+function carrot() { 
+    vegetables.call(this); 
+} 
+  
+// creating an object of the apple function which 
+// will have properties of the prototype  
+// object i.e. fruits 
+carrot.prototype 
+    = Object.create(vegetables.prototype); 
+const app = new carrot(); 
+  
+// Displaying the created object 
+console.log(app.name); 
+console.log(app.season); 
+< /script> 

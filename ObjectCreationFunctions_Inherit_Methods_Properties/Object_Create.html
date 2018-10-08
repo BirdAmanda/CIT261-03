@@ -8,23 +8,15 @@
        Object Creation
     </title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <script> 
-// creating a function which will be the  
-//prototype for the object to be created later 
-function vegetables() { 
-    this.name = 'vegi 1'; 
-} 
-  
-// creating a function to whose object will  
-// inherit properties from the prototype  
-// using object.create() method 
-function carrot() { 
-    vegetables.call(this); 
-} 
-
-  
-// Displaying the created object 
-document.getElementById('name'); 
+<body>
+    <script>
+<p id='vegetables'></p> 
+    
+    
+var vegies = {type:"carrot", color:"orange", subtype:"leafytop"};
+ 
+document.getElementById('vegetables').innerHTML=vegies.type;
 </script> 
+        </body>
     </head>
 </html>

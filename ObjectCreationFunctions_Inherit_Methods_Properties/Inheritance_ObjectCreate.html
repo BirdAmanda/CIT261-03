@@ -4,39 +4,23 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-       Object Creation Inheritance
-    </title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    
-    
-    
-    <script> 
-  
-        
-var obj = {
-  name: "Amanda",
-  age: 22,
-  id: 1
-}
-
-//simple destructuring
-function (name) = obj;
-        
-document.getElementById("name");
-
-//assigning multiple variables at one time
-function (age,id) = obj;
-document.getElementById("age");
-document.getElementById("id");
-
-//using different names for the properties
-function (name:personName) = obj;
-document.getElementByID("personName");
-</script> 
-    </head>
+    <p>An object method is a function definition, stored as a property value.</p>
+        <html>
 <body>
-    
-</body>
+<p id="method"></p>
 
+<script>
+// Create an object:
+var person = {
+    firstName: "Amanda",
+    lastName : "Bird",
+    age       : 23,
+    fullNameAge : function() {
+       return this.firstName + " " + this.lastName + '' + this.age;
+    }
+};
+
+document.getElementById("method").innerHTML = person.fullNameAge();
+</script>
+</body>
 </html>

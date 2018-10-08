@@ -21,15 +21,10 @@ function vegetables() {
 function carrot() { 
     vegetables.call(this); 
 } 
-  
-// creating an object of the carrot function which 
-// will have properties of the prototype  
-// object i.e. fruits 
-carrot.prototype = Object.create(vegetables.prototype); 
-const app = new carrot(); 
+
   
 // Displaying the created object 
-console.log(app.name); 
+document.getElementById('name'); 
 </script> 
     </head>
 </html>

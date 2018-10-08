@@ -1,4 +1,17 @@
-<script> 
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+       Object Creation Inheritance
+    </title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    
+    </head>
+    <script> 
     // creating a function which will be the 
     // prototype for the object to be created later 
     function vegetables() { 
@@ -13,7 +26,7 @@ function carrot() {
     vegetables.call(this); 
 } 
   
-// creating an object of the apple function which 
+// creating an object of the carrot function which 
 // will have properties of the prototype  
 // object i.e. fruits 
 carrot.prototype 
@@ -23,4 +36,4 @@ const app = new carrot();
 // Displaying the created object 
 console.log(app.name); 
 console.log(app.season); 
-< /script> 
+</script> 

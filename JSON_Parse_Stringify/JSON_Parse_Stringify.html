@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON Stringify takes an object and creates a string.</h2>
+
+<p id="string"></p>
+
+<script>
+var obj = { Make: "Nissan", model: "Rouge", location: "Springville" };
+var myJSON = JSON.stringify(obj);
+document.getElementById("string").innerHTML = myJSON;
+    </script>
+    
+<h2>It will do the same thing with an array.</h2>
+
+<p id="array"></p>
+
+<script>
+
+var cars = [ "Fiat", "Toyota", "Ford", "Honda" ];
+var myJSON = JSON.stringify(cars);
+document.getElementById("array").innerHTML = myJSON;
+
+</script>
+<h2>JSON Parse does the opposite.  It takes the string and creates an object.</h2>
+
+<p id="object"></p>
+
+<script>
+var txt = '{"Make":"Nissan", "Model":"Rouge", "Location":"Springville"}'
+var obj = JSON.parse(txt);
+document.getElementById("object").innerHTML = obj.Make + ", " + obj.Model + ", " + obj.Location;
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="sodaList">
+  <li>Dr. Pepper</li>
+  <li>Pepsi</li>
+</ul>
+
+<p>Click the button to insert a new soda into the list using insertBefore.</p>
+    <p>Click the second button to remove the Dr. Pepper from the list using removeChild</p>
+
+<button onclick="myFunction()">Click Me</button>
+
+<script>
+function myFunction() {
+    var newSoda = document.createElement("LI");
+    var textnode = document.createTextNode("Coke");
+    newSoda.appendChild(textnode);
+
+    var list = document.getElementById("sodaList");
+    list.insertBefore(newSoda, list.childNodes[0]);
+}
+    </script>
+    
+    
+<button onclick="my2Function()">Click Me Now</button>
+<script>
+function my2Function() {   
+var list = document.getElementById("sodaList");   
+list.removeChild(list.childNodes[2]);
+}
+
+</script>
+
+</body>
+</html>

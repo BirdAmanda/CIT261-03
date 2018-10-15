@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#box {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to create a line of text, and place it into the box.</p>
+
+<div id="box">
+My box
+</div>
+
+<button onclick="myFunction()">Click Me</button>
+
+<script>
+function myFunction() {
+    var text = document.createElement("Y");
+    var x = document.createTextNode("This is any text you want.");
+    text.appendChild(x);
+    document.getElementById("box").appendChild(text);
+}
+</script>
+
+</body>
+</html>

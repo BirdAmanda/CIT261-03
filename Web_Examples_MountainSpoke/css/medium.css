@@ -1,0 +1,111 @@
+@media only screen and (min-width: 64em) {
+  
+   body {-webkit-text-size-adjust:100%;} 
+    
+    nav button { 
+        display:none;
+    
+    }
+    
+    header h1 {
+        font-size: 5.5em;
+    }
+    
+    header .subheading {
+        font-size: 2em;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 2rem;
+    }
+    
+   
+        
+    main > .flexbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    main h2 {
+        margin: 0.5em 1.75em 0 1.75em;
+        padding: 0.3em 0 0 0;
+        font-size: 4em;
+    }
+    
+    main h3 {        
+        font-size: 1.69em;
+    }
+    
+    main section p, article.info p, article.info ul li, p.w-story {
+        font-size:1.3em;
+    }
+    
+
+    
+    table {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    table th, td {
+        border: 0.5px solid black;
+    }
+    
+    
+    
+    footer {
+        font-size: 1.3em;
+    }
+    
+    main > .grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2em 7em 0;
+    }
+    
+ 
+    
+
+
+header, main, footer {     
+   color: green;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+ 
+}
+
+header {
+    
+    background-color: #9afdfe; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+
+.highlow{
+    align-self: center;
+    flex-direction: column;
+    height:auto;
+    width: auto;
+    max-width: 100%;
+    
+}
+
+.article-img {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+    
+}
+
+.article-img:hover {box-shadow: 5px 5px 10px gray;}
+    
+

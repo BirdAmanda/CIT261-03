@@ -1,0 +1,25 @@
+  <!DOCTYPE html>
+<html>
+<body>
+
+<ul id="flowerlist">
+  <li>Rose</li>
+  <li>Lily</li>
+<li>Posey</li>
+<li>Violet</li>
+</ul>
+
+<p>Click the button to remove the first flower from the list.  If you keep clicking, it will continue to remove the flower listed at the top</p>
+    
+
+<button onclick="myFunction()">Click Me</button>
+ 
+    <script>
+function myFunction() {   
+var list = document.getElementById("flowerlist");   
+list.removeChild(list.childNodes[0]);
+}
+
+    </script>
+    </body>
+</html>

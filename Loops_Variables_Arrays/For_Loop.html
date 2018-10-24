@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>5 Times Tables</title>
+<script>
+  
+function FiveTimes() {
+	var i = 0
+	for (var i = 0; i<=12; i++) {
+	var sum = i * 5
+	var output = "5 x " + i + " = " + sum +"<br>";
+	 //document.getElementById('outputDiv').innerHTML = output;  
+	document.write(output);	 
+   }
+  
+}
+</script>
+</head>
+
+<body>
+<br>  
+<button type="button" onclick="FiveTimes()">Show me my 5 times table</button>  
+<div id="outputDiv"></div>  
+</body>
+</html>

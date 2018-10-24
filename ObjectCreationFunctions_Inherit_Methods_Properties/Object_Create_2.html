@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Object Creation Example 2</title>
+    
+    
+<script>
+  
+function Dog (desc) {
+    this.desc = desc;
+    this.color = "black";
+    this.getInfo = function getInfo() {
+        return 'A ' + this.color + ' ' + this.desc + '.';
+    };
+}
+ 
+//instantiate object using the constructor function
+var dog = new Dog('Poodle');
+dog.color = "white";
+alert(dog.getInfo()); //displays 'A white Poodle.'
+    
+    </script>
+    </head>
+</html>

@@ -1,0 +1,52 @@
+@media (min-width: 700px) {
+  .leading-bigtext {
+    font-size: 140px;
+  }
+}
+
+.leading-text {
+  max-width: 900px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+
+
+.article-img {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+    
+}
+
+.article-img:hover {box-shadow: 5px 5px 10px gray;}
+
+
+li img {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+    max-width: 100%;
+    
+}
+  img:hover {box-shadow: 5px 5px 10px gray;}
+  
+
+
+
+.bikesales{
+    padding-top: 2em;
+    text-decoration-line: underline;
+    
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;    
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+

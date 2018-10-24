@@ -8,7 +8,7 @@
 </ul>
 
 <p>Click the button to insert a new soda into the list using insertBefore.</p>
-    <p>Click the second button to remove the second soda from the list using removeChild</p>
+    
 
 <button onclick="myFunction()">Click Me</button>
 
@@ -21,16 +21,8 @@ function myFunction() {
     var list = document.getElementById("sodaList");
     list.insertBefore(newSoda, list.childNodes[0]);
 }
-    </script>
-    
-    
-<button onclick="my2Function()">Click Me Now</button>
-<script>
-function my2Function() {   
-var list = document.getElementById("sodaList");   
-list.removeChild(list.childNodes[2]);
-}
-
+   
+ 
 </script>
 
 </body>

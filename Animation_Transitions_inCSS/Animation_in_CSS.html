@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation triggered by JavaScript</title>
+   
+    <link rel='stylesheet' href='../css/animation.css'>
+    <!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    </head>
+    <body>
+        
+        <h1>Animation in Java</h1>
+        <p>Most CSS animations can be triggered by an event in JavaScript.  This one is using the 'toggle'event to make the box bigger, and then shrink again.</p>
+     
+    <div class="box"></div>
+
+<input type="button" value="Click Me" id="bt">
+        
+        
+ <script>       
+   $(function() {
+  $("#bt").click(function() {
+    $(".box").toggleClass("box-change");
+  });
+});
+</script>         
+    
+</body>
+</html>

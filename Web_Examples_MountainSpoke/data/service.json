@@ -1,0 +1,61 @@
+{	
+"Services" : [
+        
+         {   
+            "name": "Wheel Replacement",
+         	"parts": "$70",
+			"labor": "$30",
+			"total": "$100"
+    
+},
+
+   {        
+            "name": "Handle Bar Replacement",
+			"parts": "$40",
+			"labor": "$50",
+			"total": "$90"
+       
+   },
+    
+    {
+            
+             
+            "name": "Frame Rework",
+			"parts": "$170",
+			"labor": "$90",
+			"total": "$260"
+        
+    },
+    
+    {
+     
+            "name": "Bike Upgrade Kit",
+			"parts": "$610",
+			"labor": "SPECIAL $50",
+			"total": "$670"
+        
+    },
+    
+    {
+         
+            "name": "Tune Up",
+			"parts": "Part and Service Included  $20",
+            
+			"total": "$20"
+        
+    },
+    
+    {
+        
+            "name": "Brake Rework",
+			"parts": "$120",
+			"labor": "$50",
+			"total": "$170"
+        
+    }
+]
+}
+            
+		
+
+	

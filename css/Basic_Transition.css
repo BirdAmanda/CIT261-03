@@ -1,0 +1,5 @@
+a:hover{
+background-color: aqua;
+transition-property: background-color;
+transition-duration: 3s;
+}

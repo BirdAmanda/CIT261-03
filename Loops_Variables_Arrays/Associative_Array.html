@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Array Program Multiply</title>
+<script type="text/javascript">
+
+
+function testFunctions(){
+var list = [10,20,30,40,50,61]; 
+var products = multiply(list, 3);
+var test = "The multiply function would return an array with these values: [";
+for(var i = 0; i<list.length;i++){
+		if(i==0){
+		test=test+products[i];
+		}
+		else{
+		test = test + "," +products[i];
+		}
+	}
+test = test + "]";
+document.getElementById('outputDiv').innerHTML = test;	  
+}
+
+function multiply(list, multiplier) {
+	var values=[];
+	for(var i = 0; i<list.length;i++){
+	values[i] =list[i]*multiplier;
+	}
+			   
+	
+return values;			
+}
+
+
+
+</script>
+</head>
+<body>
+<h1>Array Program Multiply</h1>
+<button type="button" onclick="testFunctions()">Test</button>
+<br><br>
+<div id='outputDiv'></div>
+
+</body>
+</html>

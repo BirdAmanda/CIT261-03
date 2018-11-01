@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Animation triggered by JavaScript</title>
-   
-    <link rel='stylesheet' href='../css/animation.css'>
-    <!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-    </head>
-    <body>
-        
-        <h1>Animation in Java</h1>
-        <p>Most CSS animations can be triggered by an event in JavaScript.  This one is using the 'toggle'event to make the box bigger, and then shrink again.</p>
-     
-    <div class="box"></div>
+<style>
+#myBox {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: pink;
+}
+#myMoves {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: blue;
+}
+</style>
+<body>
 
-<input type="button" value="Click Me" id="bt">
-        
-        
- <script>       
-   $(function() {
-  $("#bt").click(function() {
-    $(".box").toggleClass("box-change");
-  });
-});
-</script>         
-  <p>This animation uses custom libraries accessed by a jquery.</p>  
+<p>
+<button onclick="myMoves()">Click Me</button> 
+</p>
+
+<div id ="myBox">
+<div id ="myMoves"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("myMoves");   
+  var pos = 5;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 75) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+</script>
+
 </body>
 </html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Run your mouse over the html element to display the time</p>
+
+<button onmouseover="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+    document.getElementById("time").innerHTML = Date();
+}
+</script>
+
+<p id="time"></p>
+
+</body>
+</html> 

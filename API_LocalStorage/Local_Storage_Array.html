@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>  
+
+var movies = ["Frozen", "Brave", "Moana", 
+"Lilo and Stitch", "Little Mermaid", "Pocohontos"];
+ 
+
+localStorage.setItem("disney", JSON.stringify(movies));
+ 
+
+var retrievedData = localStorage.getItem("disney");
+var movies2 = JSON.parse(retrievedData);
+ 
+
+alert(movies2.length);
+      
+      </script>
+    </body>
+</html>

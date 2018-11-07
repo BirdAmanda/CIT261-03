@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<!--Using a photo-->
+    
+<p>Photo I want to use:</p>
+    
+<img id="puppy" src="../images/puppy.jpeg">
+    
+    
+ <p>Create the canvas:</p>   
+<canvas id="photoCanvas" width="240" height="297" style="border:1px solid black;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+    
+ <p>Load the photo with adjusted width and height.</p>   
+<script>
+window.onload = function() {
+    var c = document.getElementById("photoCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("puppy");
+    ctx.drawImage(img, 20, 20, 240, 280);
+}
+</script>
+    
+</body>
+</html>

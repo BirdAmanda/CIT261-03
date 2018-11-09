@@ -6,20 +6,34 @@
     
     <p id='AmandaCar'></p>
 <script>
-var message="My dream car is a"
-//The first function describes my car.
-function myCar() {
-  this.make = 'Nissan';
-  this.model = 'Rouge';
-}
-//The second function calls the first function, pulling in Nissan Rouge but adding model year 2019 and color of blue.
-function myDreamcar() {
-  myCar.call(this);
+var Car = function() {};
 
-  this.year = '2019';
-  this.color = 'blue';
-};
-  document.getElementById('AmandaCar').innerHTML= message + ' ' + this.color + ' ' +this.make +' ' + this.model + ' ' + this.year;  
+Car.prototype.initialize = function(make, model)
+{
+    this.make = make;
+    this.model = model;
+}
+
+Car.prototype.describe = function()
+{
+    return this.make + ", " + this.model;
+}
+
+var DreamCar = function() {};
+DreamCar.prototype = new Car();
+
+DreamCar.prototype.drive = function(go)
+{
+    //console.log(this.make + " Is A " + go); Debug Only
+   
+}
+
+var amandasCar = new DreamCar();
+
+amandasCar.initialize("Infinity", "QX90");
+amandasCar.drive("Inheritance");
+  document.getElementById('AmandaCar').innerHTML= "Amandas Real Dream Car is" + " " +amandasCar.make+" "+amandasCar.model; 
+    //alert(myCar.make);
     </script>
     </head>
 </html>

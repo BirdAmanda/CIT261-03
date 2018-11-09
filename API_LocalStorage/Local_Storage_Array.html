@@ -3,18 +3,21 @@
 <body>
   <script>  
 
-var movies = ["Frozen", "Brave", "Moana", 
-"Lilo and Stitch", "Little Mermaid", "Pocohontos"];
+var movies = {name: 'Frozen',
+              genre: 'Cartoon',
+              type: 'Blu Ray',
+              year: '2016'
+             };
+ 
+var myMovie = JSON.stringify(movies);
+window.localStorage.setItem('movies', myMovie);
  
 
-localStorage.setItem("disney", JSON.stringify(movies));
+var retrievedData = JSON.parse(window.localStorage.getItem('movies'));
+
  
 
-var retrievedData = localStorage.getItem("disney");
-var movies2 = JSON.parse(retrievedData);
- 
-
-alert(movies2.length);
+alert(retrievedData.name);
       
       </script>
     </body>

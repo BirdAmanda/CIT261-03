@@ -13,8 +13,8 @@ var weatherRequest= new XMLHttpRequest();
         document.getElementById('wind-speed').innerHTML=weatherData.wind.speed;
         var iconcode=weatherData.weather[0].icon;
         var icon_path="//openweathermap.org/img/w/"+ iconcode +".png";
-        alert(iconcode);
-        alert(icon_path);
+        //alert(iconcode);
+        //alert(icon_path);
         document.getElementById('weather_icon').src = icon_path;
       
         /*var speed = weatherData.wind.speed;

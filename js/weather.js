@@ -1,5 +1,5 @@
 var weatherRequest= new XMLHttpRequest();
-    weatherRequest.open('GET','http://api.openweathermap.org/data/2.5/weather?zip=84032,us&appid=9967347d49e1d70dbd0c0f7eb60694d2&units=imperial',true);
+    weatherRequest.open('GET','//api.openweathermap.org/data/2.5/weather?zip=84032,us&appid=9967347d49e1d70dbd0c0f7eb60694d2&units=imperial',true);
     
     weatherRequest.send();
 
@@ -12,7 +12,7 @@ var weatherRequest= new XMLHttpRequest();
         document.getElementById('low-temp').innerHTML=weatherData.main.temp_min;
         document.getElementById('wind-speed').innerHTML=weatherData.wind.speed;
         var iconcode=weatherData.weather[0].icon;
-        var icon_path="http://openweathermap.org/img/w/"+ iconcode +".png";
+        var icon_path="//openweathermap.org/img/w/"+ iconcode +".png";
         document.getElementById('weather_icon').src = icon_path;
       
         /*var speed = weatherData.wind.speed;

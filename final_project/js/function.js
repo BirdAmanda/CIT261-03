@@ -34,11 +34,9 @@ document.getElementById("Title").innerHTML = localStorage.getItem("title");
 //DOM Manipulation
 function seasonFunction() {   
 
-var elem = document.createElement("img");
-elem.setAttribute("src", "images/sunshine.jpg");
-elem.setAttribute("height", "768");
-elem.setAttribute("width", "1024");
-elem.setAttribute("alt", "Sunshine!");
-document.getElementById("placehere").appendChild(elem);
+var elem = document.createElement("div");
+elem.innerHTML = "<center><img src='images/sunshine.jpg' height=240 width=320 /></center>";
+var pic = document.getElementById("placehere");
+pic.appendChild(elem);
 
 }

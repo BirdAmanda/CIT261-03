@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Final Project, CIT 261, Amanda Bird">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link rel="stylesheet" href="css/heber_valley_main.css">
+<title id="Title"></title>
+<style>
+    body {background-color: paleturquoise;}
+    h1 {color: darkblue;}
+    td {color: blue;}
+</style> 
+</head>    
+<body id="placehere">
+<nav id="nav">
+  <div class="topnav" id="myTopnav">
+  <a id="myAnchor" href="heber_valley.html" class="active" >Home</a>
+  <a href="heber_valley_gallery.html">Heber Weather Gallery</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</nav>
+<h1>Heber Valley is the Valley of 4 Seasons!</h1>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<div id='transition'>
+  <img class='bottom' src='images/fall.jpg' />
+  <img class='top' src='images/spring.jpg' />
+</div>
+<div id="snowflakeContainer">
+    <p class="snowflake">*</p>
+</div>
+    <br />
+    <br />
+<main>
+    <h2>Heber Valley Weather</h2>
+    <section class="weather summary">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Heber Valley Current Weather Conditions</th>
+                </tr>
+            </thead>
+            <tbody>  
+                <tr>
+                    <td>Current Temprature</td>
+                    <td><span id="current-temp"></span></td>
+                </tr>
+                <tr>
+                    <td>High</td>
+                    <td><span id='high-temp'></span>°F</td>
+                </tr>
+                <tr>
+                    <td>Low</td>
+                    <td><span id='low-temp'></span>°F</td>
+                </tr>
+                <tr>
+                    <td>Weather Description</td>
+                    <td><span id="weather-description"></span></td>
+                </tr>
+                <tr>
+                    <td>Max Wind</td>
+                    <td><span id='wind-speed'></span> mph</td>
+                </tr>
+                <tr>
+                    <td>Windchill</td>
+                    <td><span id="windchill"></span>°F</td>
+                </tr>
+                <tr>
+                <th colspan="2"><img src="" alt="current weather" id='weather_icon'>
+                </th>
+                </tr>
+             </tbody>
+          </table>
+    </section>
+</main>
+    <center><div class ="square">Feeling the Winter Blues?</div><br><br><br><br>
+    <button onclick="seasonFunction()">Add Sunshine!</button></center>
+
+<script src="js/function.js"></script>
+<script src="js/menu_navigation.js"></script>   
+<script src="js/snow_effect.js"></script>
+ 
+   
+</body>
+</html>
